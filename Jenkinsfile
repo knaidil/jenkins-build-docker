@@ -10,7 +10,7 @@ node{
     }
 
     stage('Test image') {
-        docker.image('abir/nginx').withRun('-p 89:80') { c ->
+        docker.image('abir/nginx').withRun('-p 94:94') { c ->
         sh 'docker ps'
         sh 'curl localhost'
 	     }
